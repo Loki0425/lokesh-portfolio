@@ -1,4 +1,4 @@
-const words = ["AI Engineer", "Deep Learning Specialist", "Full Stack Developer"];
+const words = ["AI Enthusiast", "Machine Learning Developer", "Full Stack Developer"];
 let i = 0,
     j = 0,
     currentWord = "",
@@ -14,6 +14,10 @@ function type() {
         isDeleting = !isDeleting;
         if (!isDeleting) i = (i + 1) % words.length;
     }
+
     setTimeout(type, isDeleting ? 50 : 100);
 }
 type();
+git add.
+git commit - m "Final correction - internship updated and refined content"
+git push

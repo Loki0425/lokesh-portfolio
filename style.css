@@ -8,7 +8,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: #0d0d0d;
     color: white;
-    scroll-behavior: smooth;
+    text-align: center;
 }
 
 nav {
@@ -19,9 +19,9 @@ nav {
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
 nav a {
@@ -30,9 +30,7 @@ nav a {
 }
 
 .hero {
-    text-align: center;
-    padding: 140px 20px;
-    position: relative;
+    padding: 120px 20px;
 }
 
 .hero h1 {
@@ -40,15 +38,16 @@ nav a {
 }
 
 .hero h2 {
-    color: #00ffcc;
     margin-top: 10px;
+    color: #00ffcc;
 }
 
 .hero p {
     margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     color: #aaa;
-    max-width: 700px;
-    margin: auto;
 }
 
 .buttons {
@@ -70,52 +69,35 @@ nav a {
     text-decoration: none;
 }
 
-.glow {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, #00ffcc, transparent 70%);
-    filter: blur(120px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
 .section {
     padding: 100px 20px;
-    text-align: center;
 }
 
-.dark-section {
+.dark {
     background: #111;
 }
 
-.skills-grid div {
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.project-card {
+.card {
     background: #1a1a1a;
     padding: 25px;
     margin: 25px auto;
-    max-width: 800px;
-    border-radius: 12px;
+    max-width: 700px;
+    border-radius: 10px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00ffcc;
+    text-decoration: none;
 }
 
 footer {
-    text-align: center;
     padding: 30px;
     background: #111;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     nav ul {
         display: none;
     }
